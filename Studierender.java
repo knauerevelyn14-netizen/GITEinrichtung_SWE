@@ -1,4 +1,4 @@
-public class StudierenderAufgabe3 {
+public class Studierender {
     String name;
     int matrikelnummer;
     String studiengang;

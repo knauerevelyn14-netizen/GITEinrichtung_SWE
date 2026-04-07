@@ -1,10 +1,11 @@
-
-public static void main(String[] args) {
-    StudierenderAufgabe3 student = new StudierenderAufgabe3();
+public class Test2 {
+    
+}public static void main(String[] args) {
+    Studierender student = new Studierender();
     student.name = "Max";
     student.email = "max@uni.de";
     
-    DozierenderAufgabe3 dozent = new DozierenderAufgabe3();
+    Dozierender dozent = new Dozierender();
     dozent.name = "Prof. Schmidt";
     
     // Test Sprechstunde

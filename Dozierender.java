@@ -20,7 +20,7 @@ public class Dozierender {
 
     }
 
-    public void sprechstundenAnfrageEmpfangen(Studierender student, String thema, String gewuenschter Termin, String nachricht) {
+    public void sprechstundenAnfrageEmpfangen(Studierender student, String thema, String gewuenschterTermin, String nachricht) {
         String anfrage = "Anfrage von " + student.name + ": " + thema + " am " + gewuenschterTermin + " - " + nachricht;
         anfragen.add(anfrage);
         System.out.println("Neue Sprechstundenanfrage erhalten: " + anfrage);
