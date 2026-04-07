@@ -3,10 +3,9 @@ import java.util.ArrayList;
 
 public class Dozierender {
     
-    String name;         // The name of the lecturer 
-    String fakultaet;    // The faculty they belong to 
-    String buronummer;  // Their office number 
-    String email;       // Their email address
+    String name;         
+    String fakultät;    
+    String büronummer;        
     List<String> anfragen; // Liste für Sprechstundenanfragen
     List<String> feedbacks;  // Liste für Feedback von Studierenden
 
@@ -14,6 +13,12 @@ public class Dozierender {
         this.anfragen = new ArrayList<>();
         this.feedbacks = new ArrayList<>();
     }
+
+    public String getName() { return name; }
+    public String getFakultät() { return fakultät; }
+    public String getBüronummer() { return büronummer; }
+
+
 
     public void frageBeantworten(Studierender student, String antwort) {
         System.out.println("Hallo " + student.name + ", hier ist die Antwort: " + antwort);    
@@ -31,4 +36,10 @@ public class Dozierender {
         feedbacks.add(feedback);
         System.out.println("Feedback empfangen: " + feedback);
     }
+
+    public void feedbackAnzeigen() {
+        System.out.println("Feedback für " + name + ":");
+        feedbacks.forEach(fb -> System.out.println("  - " + fb));
+    }
+
 }
